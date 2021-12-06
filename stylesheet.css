@@ -1,0 +1,288 @@
+* {
+    font-family: "M PLUS Rounded 1c";
+}
+
+
+/*----------------------------------------------------*/
+
+header {
+    text-align: center;
+    height: 88px;
+    width: 100%;
+    background-color: rgba(34, 49, 52, 0.9);
+    padding: 0 0;
+    margin-bottom: 30px;
+}
+
+header h1 {
+    margin: 0 0;
+}
+
+.header-left {
+    margin: 20px 0 20px 5px;
+    float: left;
+}
+
+.header-left a {
+    color: white;
+}
+
+.header-left:hover {
+    opacity: 0.5;
+}
+
+.header-left a:hover {
+    color: white;
+    text-decoration: none;
+}
+
+.header-left h1:hover {
+    text-decoration: none;
+}
+
+.header-right {
+    float: right;
+    display: flex;
+}
+
+.btn-header {
+    float: left;
+    color: bisque;
+    width: 70px;
+    padding: 8px 1px;
+    letter-spacing: 1px;
+}
+
+.btn-header:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+    text-decoration: none;
+    color: bisque;
+}
+
+.create-new-header {
+    letter-spacing: 2px;
+}
+
+.configuration-header {
+    letter-spacing: 5px;
+    line-height: 72px;
+}
+
+.register-header {
+    line-height: 72px;
+}
+
+.login-header {
+    line-height: 72px;
+    /*margin-left: 70px;*/
+}
+
+.logout-header {
+    line-height: 72px;
+    font-size: 13px;
+}
+
+
+/*----------------------------------------------------*/
+
+a {
+    text-decoration: none;
+}
+
+.main {
+    text-align: center;
+}
+
+.buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.btn-main {
+    padding: 12px 22px;
+    margin: 10px 0;
+    width: 50%;
+    color: black;
+    opacity: 0.7;
+    border-radius: 10px;
+    font-size: 20px;
+    letter-spacing: 5px;
+}
+
+.btn-main:hover {
+    padding: 10px 20px;
+    border-style: solid;
+    border-width: 2px;
+    border-color: red;
+    opacity: 1;
+}
+
+.everyone-idea {
+    background-color: #99B2FF;
+}
+
+.my-idea {
+    background-color: #99B2FF;
+}
+
+.create-new {
+    background-color: #FFB299;
+}
+
+.configuration {
+    background-color: #B2FF99;
+}
+
+
+/*----------------------------------------------------*/
+
+.idea-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: #E5E5E5;
+    margin: 10px 0;
+}
+
+.data-idea {
+    padding: 12px 22px;
+    border-radius: 10px;
+    font-size: 20px;
+    margin: 10px 10px;
+    color: black;
+    opacity: 0.8;
+}
+
+.data-idea:hover {
+    padding: 10px 20px;
+    border-style: solid;
+    border-width: 2px;
+    border-color: red;
+    opacity: 1;
+}
+
+.idea-delete {
+    border-style: none;
+    padding: 8px 20px;
+    margin: 0 10px;
+    border-radius: 10px;
+    font-size: 15px;
+    background-color: #B2B2B2;
+    color: black;
+    opacity: 0.8;
+}
+
+.idea-delete:hover {
+    padding: 6px 18px;
+    border-style: solid;
+    border-width: 2px;
+    border-color: red;
+    opacity: 1;
+}
+
+.idea-list-label {
+    color: #7F7F7F;
+    font-size: 15px;
+}
+
+.edit-delete-btn {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0;
+}
+
+.nickName {
+    background-color: #D8FFCC;
+}
+
+.title {
+    background-color: #99B2FF;
+}
+
+.rootName {
+    background-color: #FFB299;
+}
+
+.sharing {
+    background-color: #FFCCFF;
+}
+
+
+/*----------------------------------------------------*/
+
+.create-idea-text {
+    border-style: none;
+    border-radius: 10px;
+    font-size: 15px;
+    width: 100%;
+    text-align: center;
+}
+
+.create {
+    width: 400px;
+    margin: 0 auto;
+}
+
+
+/*----------------------------------------------------*/
+
+.user-data {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.data {
+    padding: 12px 22px;
+    border-radius: 10px;
+    background-color: #D8FFCC;
+    width: 50%;
+    font-size: 20px;
+    margin: 10px 0;
+}
+
+.change-data {
+    border-style: none;
+    border-radius: 10px;
+    background-color: #FFCCFF;
+    font-size: 15px;
+    width: 100%;
+    text-align: center;
+}
+
+.change-data:hover {
+    background-color: #E5E5E5;
+}
+
+
+/*----------------------------------------------------*/
+
+.delete {
+    border-style: none;
+    border-radius: 10px;
+    background-color: #FFCCFF;
+    font-size: 15px;
+    width: 100%;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.delete:hover {
+    background-color: #E5E5E5;
+}
+
+
+/*----------------------------------------------------*/
+
+footer {
+    margin-top: 30px;
+    border-top: 2px solid #CCCCCC;
+}
+
+footer h3 {
+    float: right;
+}
