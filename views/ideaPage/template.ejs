@@ -1,6 +1,6 @@
 <%- include('/home/sunamoto/pbl2App/Mindmap/views/partials/header.ejs'); %>
 
-    <div class="main">
+    <div class="main" id="main">
         <div class="container">
             <div class="heading">
                 <h2>
@@ -11,16 +11,18 @@
             </div>
 
             <div class="paper-mindmap" id="map">
-
             </div>
+            <button id='$btn'>保存</button>
             <style>
                 #map {
                     height: 600px;
                     width: 100%;
-                    background-color: #DAE4E4;
                 }
             </style>
 
+            <div class="heading">
+                <h2>ノート</h2>
+            </div>
             <div class="paper">
                 <canvas class="paper-canvas" id="mindmap"></canvas>
             </div>
@@ -77,10 +79,22 @@
     </div>
 
     <!--<script type="text/javascript" src="/gojs/my-gojs.js"></script>-->
-
     <script type="text/javascript" src="/mindelixir/dist/MindElixir.js"></script>
 
-    <script type="text/javascript" src="/mindelixir/my-mindelixir.js"></script>
+
+    <script type="text/javascript">
+        function loadScript(src) {
+            const script = document.createElement("script");
+            script.type = 'text/javascript';
+            script.src = src;
+            script.async = false;
+            document.body.appendChild(script);
+        }
+
+        let str = window.location.href.split('/').pop().split('.').pop();
+        loadScript(`/mindelixir/data/${str}.js`);
+        loadScript(`/mindelixir/data/init.js`);
+    </script>
 
     <script type="text/javascript" src="/paint/paint.js"></script>
 
